@@ -22,6 +22,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 		<option value='2'>图下文上</option>
 		<option value='3'>图左文右</option>
 		<option value='4'>图右文左</option>
+		<option value='5'>视频模块</option>
 	</select>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;排序：<input type="text" name="order_num" id="order_num" value="0" size="10" />
 	</td>
@@ -56,7 +57,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 		<select name="img_type" id="img_type" onchange="bg_wh()">
 			<option value="img" /> 图片
 			<option value="bg_img" /> 背景图
-		</select>
+		</select>[视频模块无需选择]
 		</td>
 	</tr>
 	</table>

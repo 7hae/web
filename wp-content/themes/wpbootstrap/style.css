@@ -16,3 +16,14 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 @import url('bootstrap/css/bootstrap.css');
 @import url('bootstrap/css/font-awesome.min.css');
 @import url('bootstrap/css/docs.css');
+ #bg_img{text-align:center;margin-top:70px;padding-left:0px}
+ #bg_content{position:absolute;text-align:center;top:100px;z-index:999;}
+ #bg_img_parent{position:relative;}
+ #video{width:1140px;height:640px}
+@media screen and (max-width: 680px) {
+ #video{width:270px;height:250px}
+ #bg_content{position:relative;text-align:center;top:0px;z-index:999}
+ #bg_img{text-align:center;margin-top:10px;;padding-left:15px}
+ #bg_img_parent{}
+ 
+}

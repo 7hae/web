@@ -46,6 +46,7 @@ $content=$wpdb->get_results($sql);
 				<option <?php if($type==2){echo "selected";}?> value='2'> 图下文上</option>
 				<option <?php if($type==3){echo "selected";}?> value='3'> 图左文右</option>
 				<option <?php if($type==4){echo "selected";}?> value='4'> 图右文左</option>
+				<option <?php if($type==5){echo "selected";}?> value='5'> 视频模块</option>
 			</select>
 			<?php if($type==1){echo "<option value='1' selected>图上问下";}?>
 			

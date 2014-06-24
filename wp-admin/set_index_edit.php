@@ -21,10 +21,9 @@ $bg_weight=$_POST['bg_weight'];
 $bg_height=$_POST['bg_height'];
 $sql="update wp_index_temp set title1='$title1',title2='$title2',type=$type,order_num=$order_num,description='$description',img_type='$img_type',bg_weight='$bg_weight',bg_height='$bg_height'";
 if($pic != ''){
-	$sql.=",pic=$pic";
+	$sql.=",pic='$pic'";
 }
 $sql.=" where id=$id";
-
 if($wpdb->query($sql)){
 	echo '编辑成功！';
 }else{

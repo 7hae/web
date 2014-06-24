@@ -128,7 +128,7 @@ function postinfo(){
 		success:function(msg)
 		{
 			alert(msg);
-				location.href="./set_index_temp_list.php";
+				//location.href="./set_index_temp_list.php";
 		}
 	})
 		return false;

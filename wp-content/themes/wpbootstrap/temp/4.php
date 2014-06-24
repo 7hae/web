@@ -1,4 +1,9 @@
-<div class="container bs-header" style="margin-top:100px;<?php if($row->img_type == 'bg_img'){?>background:url('<?php echo $row->pic;?>') no-repeat center top;width:<?php echo $row->bg_weight;?>px;height:<?php echo $row->bg_height;?>px;<?php }?>">
+<div class="container bs-header" style="margin-top:100px;">
+<?php if($row->img_type == 'bg_img'){?>
+<div class="col-lg-12"  style="text-align:center;">
+	<img src="<?php echo $row->pic;?>" class="img-responsive" alt="Responsive image" style="display:inline" />
+</div>
+<?php }?>
 	<div class="col-lg-5">
 		<h1><?php echo $row->title1;?></h1>
 		<?php 
