@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container">
-<div class="col-lg-8">
+<div class="col-lg-8" id="news_list">
 	<?php if (have_posts()) : ?>
 	<div class="news">
 		<header id="archive-header">
@@ -75,3 +75,41 @@
 	$(".wp-post-image").removeAttr('width');
 	$(".wp-post-image").removeAttr('height');
 </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var range = 2;             //距下边界长度/单位px
+        var elemt = 500;           //插入元素高度/单位px
+        var maxnum = 60;            //设置加载最多次数
+        var num = 1;
+        $(window).scroll(function(){
+            var srollPos = $(window).scrollTop();    //滚动条距顶部距离(页面超出窗口的高度)
+            var dbHiht = $(window).height();          //页面(约等于窗体)高度/单位px
+            var main = $("#newsmain");                        //主体元素
+            var news_list = $("#news_list");                  //内容主体元素
+            var mainHiht = main.height();               //主体元素高度/单位px
+		
+            if((srollPos + dbHiht) >= (mainHiht-range)){
+				num++;
+				$("#load_number").val(num);
+				var data={
+					start:num,
+					offset:'5'
+				}
+				 $.ajax({
+					url: '/newslist/wp-content/themes/newsframe/get_news_list.php',
+					type:"POST",
+					data:data,
+					success:function(msg)
+					{
+						alert(msg);
+						/*
+						news_list.append("<div style='border:1px solid tomato;margin-top:20px;color:#ac"+(num%60)+(num%60)+";height:"+elemt+"px' >hello world"+srollPos+"---"+num+"</div>");*/
+					}
+				})
+
+                
+				
+            }
+        });
+    });
+    </script>
