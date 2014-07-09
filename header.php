@@ -26,13 +26,14 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-<a class="navbar-brand" href="/8h"><img src='<?php echo get_template_directory_uri();?>/images/logo.png' thissrc="<?php echo get_template_directory_uri();?>/images/logo.png" height='40' /></a>		
+<a class="navbar-brand" href="/8h"><img src='<?php echo get_template_directory_uri();?>/images/logo.jpg' thissrc="<?php echo get_template_directory_uri();?>/images/logo.jpg" height='40' /></a>		
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
-<?php wp_list_pages(array('title_li' => '')); ?>	
-</ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			</ul>
 		</div><!--/.nav-collapse -->
 	</div>
+
 </div>
 

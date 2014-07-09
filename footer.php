@@ -1,7 +1,7 @@
 <div class="container" style="font-size:12px;margin-top:80px">
 	<?php get_sidebar( 'main' ); ?>
 </div>
-<div class="container" style="text-align:center;margin-bottom:60px;margin-top:80px">
+<div class="container" style="text-align:center;margin-bottom:40px;">
 	<p style="color:#aaaaaa;" class="col-xs-12 col-lg-12">ICP © 2014 北京上医养生有限公司 版权所有（备案号：京ICP备11039644号)</p>
 </div>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/bootstrap/js/jquery.js"></script>
@@ -60,4 +60,14 @@ $(function(){
 		});
 	});
 });
+</script>
+<script type="text/javascript">
+$('.popover-dismiss').popover()
+</script>
+<script type="text/javascript">
+<!--
+$('.popover-content').click(function(){
+	alert($('.popover-content').html());
+});
+//-->
 </script>

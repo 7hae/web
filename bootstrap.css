@@ -6084,16 +6084,16 @@ button.close {
   position: absolute;
   z-index: 1030;
   display: block;
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.7;
   opacity: 0;
   filter: alpha(opacity=0);
   visibility: visible;
 }
 
 .tooltip.in {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 
 .tooltip.top {
@@ -6117,8 +6117,8 @@ button.close {
 }
 
 .tooltip-inner {
-  max-width: 200px;
-  padding: 3px 8px;
+  max-width: 480%;
+  padding: 13px 18px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -6126,6 +6126,18 @@ button.close {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 680px) {
+
+.tooltip-inner {
+  max-width: 80%;
+  padding: 13px 18px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 4px;
+}
+}
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -6196,14 +6208,14 @@ button.close {
 
 .popover {
   position: absolute;
+  white-space:pre-wrap;
   top: 0;
   left: 0;
   z-index: 1010;
   display: none;
-  max-width: 276px;
+  max-width: 600px;
   padding: 1px;
   text-align: left;
-  white-space: normal;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);

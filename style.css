@@ -29,13 +29,19 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
  .navbar-inverse{padding:0 140px;}
  .bs-header3{margin-top:50px;margin-right:100px;}
  .bs-header4{margin-top:60px}
- .bs-header1{margin-top:100px}
+ .bs-header1{margin-top:50px}
+ .page_content{padding-top:100px}
+ .page_content ul{padding:0px}
+ .clearfix{height:270px}
 @media screen and (max-width: 980px) {
 	.navbar-inverse{padding:0 20px;}
 	.bs-header4{margin-left:30px}
+ .page_content{padding-top:70px;}
 }
+
 @media screen and (max-width: 680px) {
-.container{padding-left:15px;padding-right:15px;margin-top:0px;}
+
+ .container{padding-left:15px;padding-right:15px;margin-top:0px;}
  #video{width:270px;height:250px}
  #bg_content{position:relative;text-align:center;top:0px;z-index:999}
  .container h1{font-size:25px;}
@@ -48,7 +54,11 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
  .bs-header3{margin-top:10px;margin-right:0px;}
  .bs-header4{margin-top:10px;margin-left:0px}
  .bs-header1{margin-top:80px}
+ .clearfix{height:220px}
+ .popover {
+		 max-width:267px;
+	 }
 }
-#secondary li{list-style:none;margin-top:12px;text-align:center;margin-left:-43px}
+#secondary li{list-style:none;margin-top:12px;text-align:center;}
 #secondary li a{font-size:16px}
 #secondary li a{color:#555555}
