@@ -16,7 +16,7 @@
 <style>
 	body{font-family:"Microsoft YaHei";}
 </style>
-<body>
+<body onclick="pop()">
 <div class="container">
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="navbar-header">

@@ -6,6 +6,7 @@
 </div>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/bootstrap/js/grumble.js"></script>
 <p id="back-to-top"><a href="#top"><span></span></a></p> 
 </body>
 </html>
@@ -61,13 +62,31 @@ $(function(){
 	});
 });
 </script>
+
 <script type="text/javascript">
-$('.popover-dismiss').popover()
+	var hide=false;
+	var change
+	 function show_info(msg){
+		var next_doc=$(msg).next();
+		var status=$(next_doc).css('display');
+		if(status == 'none'){
+			$(next_doc).css('display','block');
+		}
+		if(hide == false){
+		change=setInterval("change_hide()",500);
+		}
+	 }
+
+	function change_hide(){
+		hide=true;
+		clearInterval(change);
+	}
+	
+	$(".container").click(function(){
+		if(hide == true){
+			$(".popover").css('display','none');
+		}
+		hide=false;
+	})
 </script>
-<script type="text/javascript">
-<!--
-$('.popover-content').click(function(){
-	alert($('.popover-content').html());
-});
-//-->
-</script>
+
