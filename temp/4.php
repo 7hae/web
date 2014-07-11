@@ -13,7 +13,6 @@
 		<?php if($row->btntype==1 && $row->btn_pic != ''){?>
 			<a href="<?php echo $row->btn_link;?>" <?php if($row->news_window == 1){echo 'target="_blank"';}?>><button class="btn <?php echo $row->btn_pic;?> btn-lg"><?php echo $row->btn_title;?></button>
 			</a>&nbsp;&nbsp;
-			
 		<?php }?>
 	</p>
 	</div>
